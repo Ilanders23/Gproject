@@ -1,8 +1,12 @@
-17.1N
+# 17.1N
 
 ALOSA, DELA CRUZ, MAGALLANO, CELOSIA
 
-EXAM
+# EXAM
 
 Complete the functioning
 
+- Start
+- Stop
+- Split (Lap)
+- Reset
