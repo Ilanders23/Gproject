@@ -19,7 +19,7 @@ class StopWatch(Frame):
         self.e = Entry(self)
         timerframe = LabelFrame(self)
         timerframe.pack(fill="both", pady=(0,0))
-        timer = Label(timerframe, textvariable=self.timestr,font=('Basketball', 40, 'bold'))
+        timer = Label(timerframe, textvariable=self.timestr,font=('Times New Roman', 40, 'bold'))
         self._setTime(self._elapsedtime)
         timer.pack(anchor = N,pady=(0,0),side=TOP)
         tree = ttk.Treeview(self)
@@ -98,7 +98,7 @@ def timeb():
 
 
 root = Tk()
-root.title('EXAM')
+root.title('Stopwatch(Exam)')
 root.geometry("510x249")
 root.resizable(False, False)
 root.wm_attributes("-topmost", 1)
@@ -118,16 +118,16 @@ for r in range(2):
     extraframe.columnconfigure(r, weight=1)
         
     
-Button(extraframe, text='Lap', height=1, width=5, font=('Basketball', 20), bg='#66e3a9',
+Button(extraframe, text='Lap', height=1, width=5, font=('Tahoma', 20), bg='#66e3a9',
 fg='white', activebackground='#6f9e8a', activeforeground='white', command=sw.Lap).grid(column=0,row=0)
 
-Button(extraframe, text='Start', height=1, width=5, font=('Basketball', 20), bg='#66e3a9',
+Button(extraframe, text='Start', height=1, width=5, font=('Tahoma', 20), bg='#66e3a9',
 fg='white', activebackground='#6f9e8a', activeforeground='white', command=sw.Start).grid(column=1,row=0)
 
-Button(extraframe, text='Stop', height=1, width=5, font=('Basketball', 20), bg='#66e3a9',
+Button(extraframe, text='Stop', height=1, width=5, font=('Tahoma', 20), bg='#66e3a9',
 fg='white', activebackground='#6f9e8a', activeforeground='white',command=sw.Stop).grid(column=0,row=1)
 
-Button(extraframe, text='Reset', height=1, width=5, font=('Basketball', 20), bg='#66e3a9',
+Button(extraframe, text='Reset', height=1, width=5, font=('Tahoma', 20), bg='#66e3a9',
 fg='white', activebackground='#6f9e8a', activeforeground='white',command=sw.Reset).grid(column=1,row=1)
 timeb()
 root.mainloop()
